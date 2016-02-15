@@ -1,0 +1,56 @@
+@PART[HGAProtonRD-253] 		// HGA Proton RD-253 Main Engine
+{
+	@mass = 1.655
+	@MODULE[ModuleEnginesFX]
+	{
+		@maxThrust = 369.543
+		@atmosphereCurve{
+			@key,0 = 0 255
+			@key,1 = 1 215
+		}
+	}
+}
+@PART[HGAProtonRD-0210] 	// RD-0210 Engine, used in the second stage
+{
+	@mass = 0.659
+	@MODULE[ModuleEnginesFX]
+	{
+		@atmosphereCurve{
+			@key,0 = 0 294
+			@key,1 = 1 180
+		}
+	}
+}
+@PART[HGAProtonStage3] 		// RD-0212 Engine, used in the third stage
+{
+	@mass = 1.491	//0.96-0.128+0.659
+	@MODULE[ModuleEnginesFX]
+	{
+		@atmosphereCurve{
+			@key,0 = 0 294
+			@key,1 = 1 180
+		}
+	}
+}
+@PART[HGAProtonRD-0214] 	// Four-chambered single RD-0214 vernier engine
+{
+	@mass = 0.035	
+	@MODULE[ModuleEnginesFX]
+	{
+		@atmosphereCurve{
+			@key,0 = 0 320
+			@key,1 = 1 180
+		}
+	}
+}
+@PART[HGABreeze14D30] 		// 14D30 Main Engine for Breeze-M upper stage
+{
+	@mass = 0.023
+	@MODULE[ModuleEnginesFX]
+	{
+		@atmosphereCurve{
+			@key,0 = 0 310
+			@key,1 = 1 180
+		}
+	}
+}
