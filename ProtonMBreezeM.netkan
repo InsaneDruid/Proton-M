@@ -5,17 +5,17 @@
 	"name"         : "Proton-M / Breeze-M",
 	"abstract"     : "High detailed Proton-M heavy booster with Breeze-M upper stage.",
 	"license": "CC-BY-NC-SA-4.0",
-	"ksp_version": "1.0.5",
+	"ksp_version": "1.1",
 	"resources": {
 		"homepage": "http://forum.kerbalspaceprogram.com/index.php?/topic/120548-105-proton-m-breeze-m/",
 		"repository": "https://github.com/InsaneDruid/Proton-M"
 	},
-	"$kref": "#/ckan/github/InsaneDruid/Proton-M",
+	//"$kref": "#/ckan/github/InsaneDruid/Proton-M",
+	"$kref": "#/ckan/spacedock/177",
 	"depends": [
 		{ "name": "ModuleManager" }
 	],
 	"suggests": [
-		{ "name": "KlockheedMartian-Gimbal" },
 		{ "name": "RealPlume-StockConfigs" },
 		{ "name": "RFStockalike" },
 		{ "name": "FilterExtensions" },
