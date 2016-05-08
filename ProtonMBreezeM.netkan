@@ -19,6 +19,7 @@
 		{ "name": "RealPlume-StockConfigs" },
 		{ "name": "RFStockalike" },
 		{ "name": "FilterExtensions" },
+		{ "name": "Firespitter" },
 		{ "name": "Tantares" }
 	],
 	"install": [
