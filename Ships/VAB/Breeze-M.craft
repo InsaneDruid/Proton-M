@@ -1,8 +1,8 @@
 ship = Breeze-M
-version = 1.1.0
-description = Upper stage for use with the PROTON-M heavy booster. 
-type = None
-size = 2.465334,2.208195,2.496502
+version = 1.2.0
+description = Upper stage for use with the PROTON-M heavy booster.
+type = VAB
+size = 2.4653337,2.20819473,2.49650192
 PART
 {
 	part = HGABreezeCore_4294638490
@@ -15,7 +15,9 @@ PART
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Heaviest
 	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 1
@@ -23,7 +25,7 @@ PART
 	attm = 0
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	link = HGABreeze14D30_4294634142
 	link = HGABreezeTank_4294628204
 	link = HGABreezeFuelBeam_4294578316
@@ -54,48 +56,20 @@ PART
 	{
 		name = ModuleCommand
 		isEnabled = True
-		controlSrcStatusText = 
+		hibernation = False
+		hibernateOnWarp = False
 		stagingEnabled = True
 		EVENTS
 		{
-			MakeReference
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Control From Here
-				guiName = Control From Here
-				category = Control From Here
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			RenameVessel
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = True
-				guiIcon = Rename Vessel
-				guiName = Rename Vessel
-				category = Rename Vessel
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+			HibernateToggle
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -105,26 +79,13 @@ PART
 		isEnabled = True
 		standaloneToggle = True
 		stagingEnabled = True
-		standaloneToggle_UIFlight
-		{
-			controlEnabled = True
-		}
 		EVENTS
 		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -135,40 +96,8 @@ PART
 		ejectionForcePercent = 100
 		isDecoupled = False
 		stagingEnabled = True
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
 		EVENTS
 		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Decoupler: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -176,6 +105,28 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTripLogger
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		Log
+		{
+			flight = 0
+		}
+		UPGRADESAPPLIED
+		{
 		}
 	}
 	RESOURCE
@@ -216,23 +167,25 @@ PART
 {
 	part = HGABreeze14D30_4294634142
 	partName = Part
-	pos = 0,14.46001,0
+	pos = 0,14.4600096,0
 	attPos = 0,0,0
-	attPos0 = 0,-0.5399866,0
+	attPos0 = 0,-0.53998661,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Off
 	istg = 2
+	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 3
+	sqor = 2
 	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	attN = top,HGABreezeCore_4294638490
 	EVENTS
 	{
@@ -255,51 +208,8 @@ PART
 		thrustPercentage = 100
 		manuallyOverridden = False
 		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
 		EVENTS
 		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -316,28 +226,23 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
 		name = FXModuleAnimateThrottle
 		isEnabled = True
+		animState = 0
 		stagingEnabled = True
 		EVENTS
 		{
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -353,56 +258,8 @@ PART
 		enableRoll = True
 		gimbalActive = False
 		stagingEnabled = True
-		gimbalLock_UIFlight
-		{
-			controlEnabled = True
-		}
-		gimbalLimiter_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
 		EVENTS
 		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -431,29 +288,34 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
 PART
 {
 	part = HGABreezeTank_4294628204
 	partName = Part
-	pos = 0,15.00001,0
+	pos = 0,15.0000095,0
 	attPos = 0,0,0
-	attPos0 = 0,5.722046E-06,0
+	attPos0 = 0,5.7220459E-06,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Heaviest
 	istg = 4
+	resPri = 0
 	dstg = 1
 	sidx = 0
 	sqor = 4
-	sepI = 2
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	attN = top,HGABreezeCore_4294638490
 	EVENTS
 	{
@@ -471,40 +333,8 @@ PART
 		ejectionForcePercent = 100
 		isDecoupled = False
 		stagingEnabled = True
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
 		EVENTS
 		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Decoupler: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -512,6 +342,9 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
 		}
 	}
 	RESOURCE
@@ -541,15 +374,17 @@ PART
 {
 	part = HGABreezeFuelBeam_4294578316
 	partName = Part
-	pos = -0.7406353,15.61973,-0.1984526
-	attPos = -0.01346999,0.001655579,-0.00360927
-	attPos0 = -0.7271653,0.6180763,-0.1948433
-	rot = -0.02099249,0.6085483,0.01610811,0.7930756
+	pos = -0.740635276,15.61973,-0.198452607
+	attPos = -0.0134699903,0.00165557896,-0.00360927009
+	attPos0 = -0.727165282,0.618076324,-0.194843307
+	rot = -0.0209924895,0.608548284,0.0161081105,0.793075621
 	attRot = 0,0,0,1
-	attRot0 = -0.02099249,0.6085483,0.01610811,0.7930756
+	attRot0 = -0.0209924895,0.608548284,0.0161081105,0.793075621
 	mir = 1,1,1
 	symMethod = Mirror
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -557,7 +392,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeFuelBeam_4294578158
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
@@ -574,15 +409,17 @@ PART
 {
 	part = HGABreezeFuelBeam_4294578158
 	partName = Part
-	pos = 0.7406353,15.61973,-0.1984526
-	attPos = 0.01346999,0.001655579,-0.00360927
-	attPos0 = 0.7271653,0.6180763,-0.1948433
-	rot = -0.02099249,-0.6085483,-0.01610811,0.7930756
+	pos = 0.740635276,15.61973,-0.198452607
+	attPos = 0.0134699903,0.00165557896,-0.00360927009
+	attPos0 = 0.727165282,0.618076324,-0.194843307
+	rot = -0.0209924895,-0.608548284,-0.0161081105,0.793075621
 	attRot = 0,0,0,1
-	attRot0 = -0.02099249,-0.6085483,-0.01610811,0.7930756
+	attRot0 = -0.0209924895,-0.608548284,-0.0161081105,0.793075621
 	mir = 1,1,1
 	symMethod = Mirror
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -590,7 +427,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeFuelBeam_4294578316
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
@@ -607,15 +444,17 @@ PART
 {
 	part = HGABreezeAntennaTracking_4294575186
 	partName = Part
-	pos = 6.389239E-08,15.62548,-0.7657087
-	attPos = 0,-0.006622314,-0.0348649
-	attPos0 = 6.389239E-08,0.6321011,-0.7308438
-	rot = 0.02646048,0,0,-0.9996499
+	pos = 6.38923865E-08,15.6254797,-0.765708685
+	attPos = 0,-0.00662231399,-0.0348648988
+	attPos0 = 6.38923865E-08,0.632101119,-0.730843782
+	rot = 0.0264604799,0,0,-0.999649882
 	attRot = 0,0,0,1
-	attRot0 = 0.02646048,0,0,-0.9996499
+	attRot0 = 0.0264604799,0,0,-0.999649882
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -623,7 +462,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
 	{
@@ -638,60 +477,18 @@ PART
 	{
 		name = ModuleDataTransmitter
 		isEnabled = True
-		xmitIncomplete = False
 		stagingEnabled = True
 		EVENTS
 		{
-			StartTransmission
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Transmit Data
-				guiName = Transmit Data
-				category = Transmit Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			TransmitIncompleteToggle
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Toggle Transmit Incomplete
-				guiName = Toggle Transmit Incomplete
-				category = Toggle Transmit Incomplete
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopTransmission
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Stop Transmitting
-				guiName = Stop Transmitting
-				category = Stop Transmitting
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -700,15 +497,17 @@ PART
 {
 	part = HGABreezeAntennaGlonass_4294567586
 	partName = Part
-	pos = -0.5377362,15.62224,-0.5377361
-	attPos = -0.01345962,0.001471519,-0.01345962
-	attPos0 = -0.5242766,0.6207647,-0.5242765
-	rot = 0.02444633,-0.3825495,-0.010126,-0.923556
+	pos = -0.537736177,15.6222401,-0.537736118
+	attPos = -0.0134596201,0.001471519,-0.0134596201
+	attPos0 = -0.524276614,0.620764673,-0.524276495
+	rot = 0.0244463291,-0.382549495,-0.0101260003,-0.92355603
 	attRot = 0,0,0,1
-	attRot0 = 0.02444633,-0.3825495,-0.010126,-0.923556
+	attRot0 = 0.0244463291,-0.382549495,-0.0101260003,-0.92355603
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -716,7 +515,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeAntennaGlonass_4294566064
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
@@ -728,20 +527,41 @@ PART
 	PARTDATA
 	{
 	}
+	MODULE
+	{
+		name = ModuleKerbNetAccess
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OpenKerbNetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = HGABreezeAntennaGlonass_4294566064
 	partName = Part
-	pos = 0.5377362,15.62224,0.5377361
-	attPos = 0.01345962,0.001471519,0.01345962
-	attPos0 = 0.5242766,0.6207647,0.5242764
-	rot = -0.010126,-0.923556,-0.02444633,0.3825495
+	pos = 0.537736177,15.6222401,0.537736118
+	attPos = 0.0134596201,0.001471519,0.0134596201
+	attPos0 = 0.524276614,0.620764673,0.524276376
+	rot = -0.0101260003,-0.92355603,-0.0244463291,0.382549495
 	attRot = 0,0,0,1
-	attRot0 = -0.010126,-0.923556,-0.02444633,0.3825495
+	attRot0 = -0.0101260003,-0.92355603,-0.0244463291,0.382549495
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -749,7 +569,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeAntennaGlonass_4294567586
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
@@ -761,20 +581,41 @@ PART
 	PARTDATA
 	{
 	}
+	MODULE
+	{
+		name = ModuleKerbNetAccess
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OpenKerbNetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = HGABreezeAntennaTelemetry_4294572320
 	partName = Part
-	pos = -0.1977043,15.62317,-0.7378429
-	attPos = -0.003162995,-0.0006475449,-0.01180446
-	attPos0 = -0.1945413,0.6238184,-0.7260385
-	rot = 0.02623411,-0.1304805,-0.003453784,-0.9910977
+	pos = -0.1977043,15.6231699,-0.737842917
+	attPos = -0.00316299498,-0.000647544919,-0.0118044596
+	attPos0 = -0.194541305,0.623818398,-0.726038516
+	rot = 0.0262341145,-0.130480498,-0.00345378439,-0.991097689
 	attRot = 0,0,0,1
-	attRot0 = 0.02623411,-0.1304805,-0.003453784,-0.9910977
+	attRot0 = 0.0262341108,-0.130480498,-0.00345378392,-0.991097689
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -782,7 +623,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeAntennaTelemetry_4294565904
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
@@ -796,62 +637,17 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDataTransmitter
+		name = ModuleSAS
 		isEnabled = True
-		xmitIncomplete = False
+		standaloneToggle = True
 		stagingEnabled = True
 		EVENTS
 		{
-			StartTransmission
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Transmit Data
-				guiName = Transmit Data
-				category = Transmit Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			TransmitIncompleteToggle
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Toggle Transmit Incomplete
-				guiName = Toggle Transmit Incomplete
-				category = Toggle Transmit Incomplete
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopTransmission
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Stop Transmitting
-				guiName = Stop Transmitting
-				category = Stop Transmitting
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -860,15 +656,17 @@ PART
 {
 	part = HGABreezeAntennaTelemetry_4294565904
 	partName = Part
-	pos = 0.1977044,15.62317,0.7378429
-	attPos = 0.003162995,-0.0006475449,0.01180446
-	attPos0 = 0.1945414,0.6238184,0.7260385
-	rot = -0.003453786,-0.9910977,-0.02623411,0.1304805
+	pos = 0.197704405,15.6231699,0.737842917
+	attPos = 0.00316299498,-0.000647544919,0.0118044596
+	attPos0 = 0.194541395,0.623818398,0.726038516
+	rot = -0.00345378648,-0.991097689,-0.0262341145,0.130480498
 	attRot = 0,0,0,1
-	attRot0 = -0.003453786,-0.9910977,-0.02623411,0.1304805
+	attRot0 = -0.00345378602,-0.991097689,-0.0262341108,0.130480498
 	mir = 1,1,1
 	symMethod = Radial
-	istg = 0
+	autostrutMode = Off
+	istg = 1
+	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
@@ -876,7 +674,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeAntennaTelemetry_4294572320
 	srfN = srfAttach,HGABreezeCore_4294638490
 	EVENTS
@@ -890,62 +688,17 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDataTransmitter
+		name = ModuleSAS
 		isEnabled = True
-		xmitIncomplete = False
+		standaloneToggle = True
 		stagingEnabled = True
 		EVENTS
 		{
-			StartTransmission
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Transmit Data
-				guiName = Transmit Data
-				category = Transmit Data
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			TransmitIncompleteToggle
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Toggle Transmit Incomplete
-				guiName = Toggle Transmit Incomplete
-				category = Toggle Transmit Incomplete
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			StopTransmission
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Stop Transmitting
-				guiName = Stop Transmitting
-				category = Stop Transmitting
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -956,13 +709,15 @@ PART
 	partName = Part
 	pos = 0,15.95788,0
 	attPos = 0,0,0
-	attPos0 = 0,0.957881,0
+	attPos0 = 0,0.957880974,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Heaviest
 	istg = 0
+	resPri = 0
 	dstg = 1
 	sidx = 0
 	sqor = 0
@@ -970,7 +725,7 @@ PART
 	attm = 0
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	attN = bottom,HGABreezeCore_4294638490
 	EVENTS
 	{
@@ -988,40 +743,8 @@ PART
 		ejectionForcePercent = 100
 		isDecoupled = False
 		stagingEnabled = True
-		ejectionForcePercent_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 1
-		}
 		EVENTS
 		{
-			Decouple
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Decouple
-				guiName = Decouple
-				category = Decouple
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Decoupler: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1029,6 +752,9 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
 		}
 	}
 	MODULE
@@ -1038,32 +764,11 @@ PART
 		stagingEnabled = True
 		EVENTS
 		{
-			RunTestEvent
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Run Test
-				guiName = Run Test
-				category = Run Test
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
 		{
 		}
 	}
@@ -1072,15 +777,17 @@ PART
 {
 	part = HGABreezeRCS_4294540390
 	partName = Part
-	pos = -0.5301506,14.35038,3.159944E-08
+	pos = -0.530150592,14.3503799,3.15994413E-08
 	attPos = 0,0,0
-	attPos0 = -0.5301506,-0.6496172,3.159944E-08
-	rot = -4.72964E-07,0.7071074,4.729647E-07,0.7071063
+	attPos0 = -0.530150592,-0.649617195,3.15994413E-08
+	rot = -4.72963933E-07,0.707107365,4.72964643E-07,0.707106233
 	attRot = 0,0,0,1
-	attRot0 = -4.72964E-07,0.7071074,4.729647E-07,0.7071063
+	attRot0 = -4.7296399E-07,0.707107425,4.729647E-07,0.707106292
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Off
 	istg = 3
+	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 3
@@ -1088,7 +795,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeRCS_4294537410
 	sym = HGABreezeRCS_4294537278
 	sym = HGABreezeRCS_4294537146
@@ -1114,51 +821,8 @@ PART
 		thrustPercentage = 100
 		manuallyOverridden = False
 		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
 		EVENTS
 		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1175,10 +839,13 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
-		name = ModuleRCS
+		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
 		thrustPercentage = 100
@@ -1189,91 +856,11 @@ PART
 		enableX = True
 		enableY = True
 		enableZ = True
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1281,6 +868,9 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
 		}
 	}
 }
@@ -1288,15 +878,17 @@ PART
 {
 	part = HGABreezeRCS_4294537410
 	partName = Part
-	pos = 1.66924E-15,14.35038,0.5301505
+	pos = 1.66923999E-15,14.3503799,0.530150473
 	attPos = 0,0,0
-	attPos0 = 1.66924E-15,-0.6496172,0.5301505
-	rot = 5.225267E-13,1,6.688726E-07,-7.586432E-07
+	attPos0 = 1.66923999E-15,-0.649617195,0.530150473
+	rot = 5.22526683E-13,1,6.68872588E-07,-7.58643182E-07
 	attRot = 0,0,0,1
-	attRot0 = 5.225267E-13,1,6.688726E-07,-7.586432E-07
+	attRot0 = 5.22526683E-13,1,6.68872588E-07,-7.58643182E-07
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Off
 	istg = 3
+	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 3
@@ -1304,7 +896,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeRCS_4294540390
 	sym = HGABreezeRCS_4294537278
 	sym = HGABreezeRCS_4294537146
@@ -1330,51 +922,8 @@ PART
 		thrustPercentage = 100
 		manuallyOverridden = False
 		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
 		EVENTS
 		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1391,10 +940,13 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
-		name = ModuleRCS
+		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
 		thrustPercentage = 100
@@ -1405,91 +957,11 @@ PART
 		enableX = True
 		enableY = True
 		enableZ = True
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1497,6 +969,9 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
 		}
 	}
 }
@@ -1504,15 +979,17 @@ PART
 {
 	part = HGABreezeRCS_4294537278
 	partName = Part
-	pos = 0.5301506,14.35038,-7.794668E-08
+	pos = 0.530150592,14.3503799,-7.79466802E-08
 	attPos = 0,0,0
-	attPos0 = 0.5301506,-0.6496172,-7.794668E-08
-	rot = 4.729648E-07,0.7071062,4.72964E-07,-0.7071074
+	attPos0 = 0.530150592,-0.649617195,-7.79466802E-08
+	rot = 4.72964814E-07,0.707106173,4.7296399E-07,-0.707107425
 	attRot = 0,0,0,1
-	attRot0 = 4.729648E-07,0.7071062,4.72964E-07,-0.7071074
+	attRot0 = 4.72964814E-07,0.707106173,4.7296399E-07,-0.707107425
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Off
 	istg = 3
+	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 3
@@ -1520,7 +997,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeRCS_4294540390
 	sym = HGABreezeRCS_4294537410
 	sym = HGABreezeRCS_4294537146
@@ -1546,51 +1023,8 @@ PART
 		thrustPercentage = 100
 		manuallyOverridden = False
 		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
 		EVENTS
 		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1607,10 +1041,13 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
-		name = ModuleRCS
+		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
 		thrustPercentage = 100
@@ -1621,91 +1058,11 @@ PART
 		enableX = True
 		enableY = True
 		enableZ = True
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1714,21 +1071,26 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
 PART
 {
 	part = HGABreezeRCS_4294537146
 	partName = Part
-	pos = -6.319888E-08,14.35038,-0.5301505
+	pos = -6.31988826E-08,14.3503799,-0.530150473
 	attPos = 0,0,0
-	attPos0 = -6.319888E-08,-0.6496172,-0.5301505
-	rot = 6.688726E-07,-7.586432E-07,-5.225267E-13,-1
+	attPos0 = -6.31988826E-08,-0.649617195,-0.530150473
+	rot = 6.68872588E-07,-7.58643182E-07,-5.22526683E-13,-1
 	attRot = 0,0,0,1
-	attRot0 = 6.688726E-07,-7.586432E-07,-5.225267E-13,-1
+	attRot0 = 6.68872588E-07,-7.58643182E-07,-5.22526683E-13,-1
 	mir = 1,1,1
 	symMethod = Radial
+	autostrutMode = Off
 	istg = 3
+	resPri = 0
 	dstg = 0
 	sidx = 0
 	sqor = 3
@@ -1736,7 +1098,7 @@ PART
 	attm = 1
 	modCost = 0
 	modMass = 0
-	modSize = (0.0, 0.0, 0.0)
+	modSize = 0,0,0
 	sym = HGABreezeRCS_4294540390
 	sym = HGABreezeRCS_4294537410
 	sym = HGABreezeRCS_4294537278
@@ -1762,51 +1124,8 @@ PART
 		thrustPercentage = 100
 		manuallyOverridden = False
 		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
 		EVENTS
 		{
-			Activate
-			{
-				active = True
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Activate Engine
-				guiName = Activate Engine
-				category = Activate Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Shutdown
-			{
-				active = False
-				guiActive = True
-				guiActiveUncommand = False
-				guiIcon = Shutdown Engine
-				guiName = Shutdown Engine
-				category = Shutdown Engine
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1823,10 +1142,13 @@ PART
 				actionGroup = None
 			}
 		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
-		name = ModuleRCS
+		name = ModuleRCSFX
 		isEnabled = True
 		rcsEnabled = True
 		thrustPercentage = 100
@@ -1837,91 +1159,11 @@ PART
 		enableX = True
 		enableY = True
 		enableZ = True
-		stagingEnabled = True
-		thrustPercentage_UIFlight
-		{
-			controlEnabled = True
-			minValue = 0
-			maxValue = 100
-			stepIncrement = 0.5
-		}
-		enableYaw_UIFlight
-		{
-			controlEnabled = True
-		}
-		enablePitch_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableRoll_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableX_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableY_UIFlight
-		{
-			controlEnabled = True
-		}
-		enableZ_UIFlight
-		{
-			controlEnabled = True
-		}
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
-			ToggleToggles
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Actuation Toggles
-				guiName = Show Actuation Toggles
-				category = Actuation Toggles
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Disable
-			{
-				active = True
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Disable RCS Port
-				guiName = Disable RCS Port
-				category = Disable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			Enable
-			{
-				active = False
-				guiActive = True
-				guiActiveEditor = True
-				guiActiveUncommand = False
-				guiIcon = Enable RCS Port
-				guiName = Enable RCS Port
-				category = Enable RCS Port
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
-			ToggleStaging
-			{
-				active = True
-				guiActive = False
-				guiActiveUncommand = False
-				guiIcon = Disable Staging
-				guiName = RCS: Disable Staging
-				category = Disable Staging
-				guiActiveUnfocused = False
-				unfocusedRange = 2
-				externalToEVAOnly = True
-			}
 		}
 		ACTIONS
 		{
@@ -1929,6 +1171,9 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
 		}
 	}
 }
