@@ -1,1 +1,2 @@
-GameData/HGA/Proton/parts/*.tga
+*.tga
+*.mbm
