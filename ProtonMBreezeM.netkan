@@ -12,6 +12,7 @@
 	},
 	//"$kref": "#/ckan/github/InsaneDruid/Proton-M",
 	"$kref": "#/ckan/spacedock/177",
+	"x_netkan_epoch": 1,
 	"depends": [
 		{ "name": "ModuleManager" }
 	],
