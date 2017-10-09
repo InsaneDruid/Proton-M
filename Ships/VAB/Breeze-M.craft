@@ -1,5 +1,5 @@
 ship = Breeze-M
-version = 1.2.0
+version = 1.3.1
 description = Upper stage for use with the PROTON-M heavy booster.
 type = VAB
 size = 2.4653337,2.20819473,2.49650192
@@ -16,6 +16,7 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Heaviest
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -36,12 +37,10 @@ PART
 	link = HGABreezeAntennaTelemetry_4294572320
 	link = HGABreezeAntennaTelemetry_4294565904
 	link = HGABreezeDecoupler0625_4294546030
-	link = HGABreezeRCS_4294540390
-	link = HGABreezeRCS_4294537410
-	link = HGABreezeRCS_4294537278
-	link = HGABreezeRCS_4294537146
+	link = HGABreezeRCSTank_4294639798
 	attN = top,HGABreezeDecoupler0625_4294546030
 	attN = top00,HGABreezeTank_4294628204
+	attN = top01,HGABreezeRCSTank_4294639798
 	attN = bottom,HGABreeze14D30_4294634142
 	EVENTS
 	{
@@ -64,6 +63,10 @@ PART
 		}
 		ACTIONS
 		{
+			MakeReferenceToggle
+			{
+				actionGroup = None
+			}
 			HibernateToggle
 			{
 				actionGroup = None
@@ -84,6 +87,41 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleReactionWheel
+		isEnabled = True
+		actuatorModeCycle = 0
+		authorityLimiter = 100
+		stateString = Active
+		stagingEnabled = True
+		WheelState = Active
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			CycleAction
+			{
+				actionGroup = None
+			}
+			Activate
+			{
+				actionGroup = None
+			}
+			Deactivate
+			{
+				actionGroup = None
+			}
+			Toggle
+			{
+				actionGroup = None
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -176,6 +214,7 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 2
 	resPri = 0
 	dstg = 1
@@ -306,12 +345,13 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Heaviest
-	istg = 4
+	rigidAttachment = False
+	istg = 3
 	resPri = 0
 	dstg = 1
 	sidx = 0
 	sqor = 4
-	sepI = 4
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -383,6 +423,7 @@ PART
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -418,6 +459,7 @@ PART
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -453,6 +495,7 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -477,6 +520,7 @@ PART
 	{
 		name = ModuleDataTransmitter
 		isEnabled = True
+		xmitIncomplete = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -506,6 +550,7 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -560,6 +605,7 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -608,12 +654,13 @@ PART
 	pos = -0.1977043,15.6231699,-0.737842917
 	attPos = -0.00316299498,-0.000647544919,-0.0118044596
 	attPos0 = -0.194541305,0.623818398,-0.726038516
-	rot = 0.0262341145,-0.130480498,-0.00345378439,-0.991097689
+	rot = 0.0262341183,-0.130480498,-0.00345378486,-0.991097689
 	attRot = 0,0,0,1
 	attRot0 = 0.0262341108,-0.130480498,-0.00345378392,-0.991097689
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -659,12 +706,13 @@ PART
 	pos = 0.197704405,15.6231699,0.737842917
 	attPos = 0.00316299498,-0.000647544919,0.0118044596
 	attPos0 = 0.194541395,0.623818398,0.726038516
-	rot = -0.00345378648,-0.991097689,-0.0262341145,0.130480498
+	rot = -0.00345378695,-0.991097689,-0.0262341183,0.130480498
 	attRot = 0,0,0,1
 	attRot0 = -0.00345378602,-0.991097689,-0.0262341108,0.130480498
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
+	rigidAttachment = False
 	istg = 1
 	resPri = 0
 	dstg = 0
@@ -716,6 +764,7 @@ PART
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Heaviest
+	rigidAttachment = False
 	istg = 0
 	resPri = 0
 	dstg = 1
@@ -775,31 +824,93 @@ PART
 }
 PART
 {
-	part = HGABreezeRCS_4294540390
+	part = HGABreezeRCSTank_4294639798
 	partName = Part
-	pos = -0.530150592,14.3503799,3.15994413E-08
+	pos = -3.63445274E-08,14.3969526,0
 	attPos = 0,0,0
-	attPos0 = -0.530150592,-0.649617195,3.15994413E-08
-	rot = -4.72963933E-07,0.707107365,4.72964643E-07,0.707106233
+	attPos0 = -3.63445274E-08,-0.603047371,0
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
-	attRot0 = -4.7296399E-07,0.707107425,4.729647E-07,0.707106292
+	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
-	istg = 3
+	rigidAttachment = False
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 0
-	sqor = 3
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = HGABreezeRCS_4294622640
+	link = HGABreezeRCS_4294622360
+	link = HGABreezeRCS_4294622290
+	link = HGABreezeRCS_4294622220
+	attN = top,HGABreezeCore_4294638490
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 11.25
+		maxAmount = 11.25
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 15.98
+		maxAmount = 15.98
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGABreezeRCS_4294622640
+	partName = Part
+	pos = -8.27746902E-08,14.3527699,-0.5310992
+	attPos = 0,0,0
+	attPos0 = -4.64301628E-08,-0.0441827774,-0.5310992
+	rot = -4.96845814E-07,-7.80351513E-07,3.87714383E-13,-1
+	attRot = 0,0,0,1
+	attRot0 = -4.96845814E-07,-7.80351513E-07,3.87714383E-13,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
 	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGABreezeRCS_4294537410
-	sym = HGABreezeRCS_4294537278
-	sym = HGABreezeRCS_4294537146
-	srfN = srfAttach,HGABreezeCore_4294638490
+	sym = HGABreezeRCS_4294622360
+	sym = HGABreezeRCS_4294622290
+	sym = HGABreezeRCS_4294622220
+	srfN = srfAttach,HGABreezeRCSTank_4294639798
 	EVENTS
 	{
 	}
@@ -811,30 +922,26 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleRCSFX
 		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
+		rcsEnabled = True
 		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -876,31 +983,32 @@ PART
 }
 PART
 {
-	part = HGABreezeRCS_4294537410
+	part = HGABreezeRCS_4294622360
 	partName = Part
-	pos = 1.66923999E-15,14.3503799,0.530150473
+	pos = -0.5310992,14.3527699,1.4774181E-08
 	attPos = 0,0,0
-	attPos0 = 1.66923999E-15,-0.649617195,0.530150473
-	rot = 5.22526683E-13,1,6.68872588E-07,-7.58643182E-07
+	attPos0 = -0.531099141,-0.0441827774,1.4774181E-08
+	rot = -3.51322797E-07,-0.707107365,3.51323337E-07,-0.707106292
 	attRot = 0,0,0,1
-	attRot0 = 5.22526683E-13,1,6.68872588E-07,-7.58643182E-07
+	attRot0 = -3.51322797E-07,-0.707107365,3.51323337E-07,-0.707106292
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
-	istg = 3
+	rigidAttachment = False
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 0
-	sqor = 3
+	sidx = -1
+	sqor = -1
 	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGABreezeRCS_4294540390
-	sym = HGABreezeRCS_4294537278
-	sym = HGABreezeRCS_4294537146
-	srfN = srfAttach,HGABreezeCore_4294638490
+	sym = HGABreezeRCS_4294622640
+	sym = HGABreezeRCS_4294622290
+	sym = HGABreezeRCS_4294622220
+	srfN = srfAttach,HGABreezeRCSTank_4294639798
 	EVENTS
 	{
 	}
@@ -912,30 +1020,26 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleRCSFX
 		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
+		rcsEnabled = True
 		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -977,31 +1081,32 @@ PART
 }
 PART
 {
-	part = HGABreezeRCS_4294537278
+	part = HGABreezeRCS_4294622290
 	partName = Part
-	pos = 0.530150592,14.3503799,-7.79466802E-08
+	pos = 5.65158054E-08,14.3527699,0.5310992
 	attPos = 0,0,0
-	attPos0 = 0.530150592,-0.649617195,-7.79466802E-08
-	rot = 4.72964814E-07,0.707106173,4.7296399E-07,-0.707107425
+	attPos0 = 9.28603328E-08,-0.0441827774,0.5310992
+	rot = 4.094322E-13,-1,4.96845814E-07,8.24062909E-07
 	attRot = 0,0,0,1
-	attRot0 = 4.72964814E-07,0.707106173,4.7296399E-07,-0.707107425
+	attRot0 = 4.094322E-13,-1,4.96845814E-07,8.24062909E-07
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
-	istg = 3
+	rigidAttachment = False
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 0
-	sqor = 3
+	sidx = -1
+	sqor = -1
 	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGABreezeRCS_4294540390
-	sym = HGABreezeRCS_4294537410
-	sym = HGABreezeRCS_4294537146
-	srfN = srfAttach,HGABreezeCore_4294638490
+	sym = HGABreezeRCS_4294622640
+	sym = HGABreezeRCS_4294622360
+	sym = HGABreezeRCS_4294622220
+	srfN = srfAttach,HGABreezeRCSTank_4294639798
 	EVENTS
 	{
 	}
@@ -1013,30 +1118,26 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleRCSFX
 		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
+		rcsEnabled = True
 		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
+			ToggleAction
 			{
 				actionGroup = None
 			}
@@ -1078,31 +1179,32 @@ PART
 }
 PART
 {
-	part = HGABreezeRCS_4294537146
+	part = HGABreezeRCS_4294622220
 	partName = Part
-	pos = -6.31988826E-08,14.3503799,-0.530150473
+	pos = 0.531099081,14.3527699,-7.80861384E-08
 	attPos = 0,0,0
-	attPos0 = -6.31988826E-08,-0.649617195,-0.530150473
-	rot = 6.68872588E-07,-7.58643182E-07,-5.22526683E-13,-1
+	attPos0 = 0.531099141,-0.0441827774,-7.80861384E-08
+	rot = 3.51323337E-07,-0.707106292,3.51322797E-07,0.707107365
 	attRot = 0,0,0,1
-	attRot0 = 6.68872588E-07,-7.58643182E-07,-5.22526683E-13,-1
+	attRot0 = 3.51323337E-07,-0.707106292,3.51322797E-07,0.707107365
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
-	istg = 3
+	rigidAttachment = False
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 0
-	sqor = 3
+	sidx = -1
+	sqor = -1
 	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGABreezeRCS_4294540390
-	sym = HGABreezeRCS_4294537410
-	sym = HGABreezeRCS_4294537278
-	srfN = srfAttach,HGABreezeCore_4294638490
+	sym = HGABreezeRCS_4294622640
+	sym = HGABreezeRCS_4294622360
+	sym = HGABreezeRCS_4294622290
+	srfN = srfAttach,HGABreezeRCSTank_4294639798
 	EVENTS
 	{
 	}
@@ -1114,30 +1216,26 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
+		name = ModuleRCSFX
 		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
+		rcsEnabled = True
 		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
+			ToggleAction
 			{
 				actionGroup = None
 			}

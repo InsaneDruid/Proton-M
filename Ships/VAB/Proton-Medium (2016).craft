@@ -1,13 +1,13 @@
-ship = Proton-M with Breeze-M
+ship = Proton-Medium (2016)
 version = 1.3.1
 description = Proton-Medium with Breeze-M, standing on the launch pad. Use the generators in the pad to fuel (or de-fuel in case of scrub) the three stages of the booster vehicle. The Breeze-M is already fuelled up before erecting the Proton on the launch pad.
 type = VAB
-size = 4.5122242,34.2855606,4.32236671
+size = 4.5122242,27.4528618,4.32236481
 PART
 {
 	part = HGABreezeDecoupler0625_4294546030
 	partName = Part
-	pos = 1.13248825E-06,28.5731125,1.1920929E-07
+	pos = 1.75505318E-06,21.7100525,1.52944403E-06
 	attPos = 0,0,0
 	attPos0 = 0,-0.709915161,0
 	rot = 0,0,0,1.00000012
@@ -78,7 +78,7 @@ PART
 {
 	part = HGABreezeCore_4294638490
 	partName = Part
-	pos = 1.13248825E-06,27.6152344,1.1920929E-07
+	pos = 1.75505318E-06,20.7521744,1.52944403E-06
 	attPos = 0,5.74269104,0
 	attPos0 = 0,15,0
 	rot = 0,0,0,1.00000012
@@ -277,7 +277,7 @@ PART
 {
 	part = HGABreeze14D30_4294634142
 	partName = Part
-	pos = 1.13248825E-06,27.0752411,1.1920929E-07
+	pos = 1.75505318E-06,20.2121811,1.52944403E-06
 	attPos = 0,0,0
 	attPos0 = 0,-0.53998661,0
 	rot = 0,0,0,1.00000012
@@ -408,7 +408,7 @@ PART
 {
 	part = HGABreezeFuelBeam_4294578316
 	partName = Part
-	pos = -0.740634501,28.2349625,-0.198452652
+	pos = -0.740634382,21.3719025,-0.198451355
 	attPos = -0.0134699903,0.00165557896,-0.00360927009
 	attPos0 = -0.727165282,0.618076324,-0.194843307
 	rot = -0.0209924914,0.608548403,0.0161081105,0.793075681
@@ -444,7 +444,7 @@ PART
 {
 	part = HGABreezeFuelBeam_4294578158
 	partName = Part
-	pos = 0.740636885,28.2349625,-0.198452652
+	pos = 0.740637958,21.3719025,-0.198451355
 	attPos = 0.0134699903,0.00165557896,-0.00360927009
 	attPos0 = 0.727165282,0.618076324,-0.194843307
 	rot = -0.0209924914,-0.608548403,-0.0161081105,0.793075681
@@ -480,7 +480,7 @@ PART
 {
 	part = HGABreezeAntennaTracking_4294575186
 	partName = Part
-	pos = 1.1920929E-06,28.240715,-0.765709221
+	pos = 1.81465782E-06,21.377655,-0.765708387
 	attPos = 0,-0.00662231399,-0.0348648988
 	attPos0 = 6.38923865E-08,0.632101119,-0.730843782
 	rot = 0.0264604837,0,0,-0.999650002
@@ -535,10 +535,10 @@ PART
 {
 	part = HGABreezeAntennaGlonass_4294567586
 	partName = Part
-	pos = -0.537735462,28.2374725,-0.537736356
+	pos = -0.537735283,21.3744125,-0.537735343
 	attPos = -0.0134596201,0.001471519,-0.0134596201
 	attPos0 = -0.524276614,0.620764673,-0.524276495
-	rot = 0.0244463384,-0.382549614,-0.0101260059,-0.923556209
+	rot = 0.0244463347,-0.382549644,-0.0101260049,-0.923556209
 	attRot = 0,0,0,1
 	attRot0 = 0.0244463291,-0.382549495,-0.0101260003,-0.92355603
 	mir = 1,1,1
@@ -590,10 +590,10 @@ PART
 {
 	part = HGABreezeAntennaGlonass_4294566064
 	partName = Part
-	pos = 0.537737668,28.2374725,0.537736654
+	pos = 0.537738681,21.3744125,0.537738502
 	attPos = 0.0134596201,0.001471519,0.0134596201
 	attPos0 = 0.524276614,0.620764673,0.524276376
-	rot = -0.0101260059,-0.923556209,-0.0244463384,0.382549614
+	rot = -0.0101260049,-0.923556209,-0.0244463347,0.382549644
 	attRot = 0,0,0,1
 	attRot0 = -0.0101260003,-0.92355603,-0.0244463291,0.382549495
 	mir = 1,1,1
@@ -645,10 +645,10 @@ PART
 {
 	part = HGABreezeAntennaTelemetry_4294572320
 	partName = Part
-	pos = -0.197703302,28.2384033,-0.737843215
+	pos = -0.197702855,21.3753433,-0.737842321
 	attPos = -0.00316299498,-0.000647544919,-0.0118044596
 	attPos0 = -0.194541305,0.623818398,-0.726038516
-	rot = 0.0262341443,-0.130480528,-0.00345378742,-0.991097808
+	rot = 0.0262341462,-0.130480528,-0.00345378648,-0.991097808
 	attRot = 0,0,0,1
 	attRot0 = 0.0262341108,-0.130480498,-0.00345378392,-0.991097689
 	mir = 1,1,1
@@ -697,10 +697,10 @@ PART
 {
 	part = HGABreezeAntennaTelemetry_4294565904
 	partName = Part
-	pos = 0.197705686,28.2384033,0.737843335
+	pos = 0.197706491,21.3753433,0.737845302
 	attPos = 0.00316299498,-0.000647544919,0.0118044596
 	attPos0 = 0.194541395,0.623818398,0.726038516
-	rot = -0.00345378928,-0.991097808,-0.0262341443,0.130480528
+	rot = -0.00345379021,-0.991097808,-0.0262341462,0.130480528
 	attRot = 0,0,0,1
 	attRot0 = -0.00345378602,-0.991097689,-0.0262341108,0.130480498
 	mir = 1,1,1
@@ -749,7 +749,7 @@ PART
 {
 	part = HGABreezeRCS_4294540390
 	partName = Part
-	pos = -0.530149817,26.9656143,1.1920929E-07
+	pos = -0.530149639,20.1025543,1.52944403E-06
 	attPos = 0,0,0
 	attPos0 = -0.530150592,-0.649617195,3.15994413E-08
 	rot = -4.72964075E-07,0.707107365,4.72964757E-07,0.707106411
@@ -847,7 +847,7 @@ PART
 {
 	part = HGABreezeRCS_4294537410
 	partName = Part
-	pos = 1.13248825E-06,26.9656143,0.53015089
+	pos = 1.75505318E-06,20.1025543,0.530152738
 	attPos = 0,0,0
 	attPos0 = 1.66923999E-15,-0.649617195,0.530150473
 	rot = 5.40012479E-13,1.00000012,6.68872758E-07,-6.85453415E-07
@@ -945,7 +945,7 @@ PART
 {
 	part = HGABreezeRCS_4294537278
 	partName = Part
-	pos = 0.530152082,26.9656143,0
+	pos = 0.530153096,20.1025543,1.41023474E-06
 	attPos = 0,0,0
 	attPos0 = 0.530150592,-0.649617195,-7.79466802E-08
 	rot = 4.72964928E-07,0.707106292,4.72964075E-07,-0.707107484
@@ -1043,7 +1043,7 @@ PART
 {
 	part = HGABreezeRCS_4294537146
 	partName = Part
-	pos = 1.07288349E-06,26.9656143,-0.530150712
+	pos = 1.69544842E-06,20.1025543,-0.530149698
 	attPos = 0,0,0
 	attPos0 = -6.31988826E-08,-0.649617195,-0.530150473
 	rot = 6.68872758E-07,-6.85453415E-07,-5.40012479E-13,-1.00000012
@@ -1141,7 +1141,7 @@ PART
 {
 	part = HGABreezeTank_4294628204
 	partName = Part
-	pos = 1.13248825E-06,27.6152382,1.1920929E-07
+	pos = 1.75505318E-06,20.7521782,1.52944403E-06
 	attPos = 0,0,0
 	attPos0 = 0,5.7220459E-06,0
 	rot = 0,0,0,1.00000012
@@ -1221,7 +1221,7 @@ PART
 {
 	part = HGAProtonFairingBase_4294306454
 	partName = Part
-	pos = 1.13248825E-06,26.8363075,1.1920929E-07
+	pos = 1.75505318E-06,19.9732475,1.52944403E-06
 	attPos = 0,0,0
 	attPos0 = 0,-0.778930664,0
 	rot = 0,-0.707106829,0,0.707106829
@@ -1231,11 +1231,11 @@ PART
 	symMethod = Mirror
 	autostrutMode = Heaviest
 	rigidAttachment = False
-	istg = 12
+	istg = 10
 	resPri = 0
 	dstg = 2
 	sidx = 0
-	sqor = 12
+	sqor = 10
 	sepI = -1
 	attm = 0
 	modCost = 0
@@ -1247,7 +1247,7 @@ PART
 	attN = top01,HGAProtonFairingAupper_4294160160
 	attN = top02,HGAProtonFairingAlower_4294155666
 	attN = top,HGABreezeTank_4294628204
-	attN = bottom,HGAProtonStage3p2_4294298376
+	attN = bottom,HGAProtonLightS2_4294494302
 	EVENTS
 	{
 	}
@@ -1326,7 +1326,7 @@ PART
 {
 	part = HGAProtonFairingAlower_4294155666
 	partName = Part
-	pos = 1.01327862E-06,29.2021446,9.5367659E-07
+	pos = 1.63584332E-06,22.3390846,2.3639127E-06
 	attPos = 0,0,0
 	attPos0 = 8.34464799E-07,2.3658371,1.19209126E-07
 	rot = 0,0,0,1.00000012
@@ -1455,16 +1455,16 @@ PART
 }
 PART
 {
-	part = HGAProtonStage3p2_4294298376
+	part = HGAProtonLightS2_4294494302
 	partName = Part
-	pos = 1.13248825E-06,25.2331276,1.1920929E-07
+	pos = 1.7285347E-06,17.6117439,1.54972076E-06
 	attPos = 0,0,0
-	attPos0 = 1.13248825E-06,25.2331276,1.1920929E-07
+	attPos0 = 1.7285347E-06,17.6117439,1.54972076E-06
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 5
@@ -1477,16 +1477,16 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = HGAProtonRD-0214_4294295898
-	link = HGAProtonStage2_4294290862
-	link = HGAProton15D4_4294173388
-	link = HGAProton15D4_4294170794
-	link = HGAProton15D4_4294170748
-	link = HGAProton15D4_4294170702
+	link = HGAProton15D4_4294479898
+	link = HGAProton15D4_4294478130
+	link = HGAProton15D4_4294478084
+	link = HGAProton15D4_4294478038
+	link = HGAProtonRD-0214_4294441794
+	link = HGAProtonMediumS1_4294465796
 	link = HGAProtonFairingBase_4294306454
 	attN = top,HGAProtonFairingBase_4294306454
-	attN = engine,HGAProtonRD-0214_4294295898
-	attN = bottom,HGAProtonStage2_4294290862
+	attN = engine,HGAProtonRD-0214_4294441794
+	attN = bottom,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -1495,6 +1495,22 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -1646,8 +1662,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 701
-		maxAmount = 701
+		amount = 1220
+		maxAmount = 1220
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1657,8 +1673,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 857
-		maxAmount = 857
+		amount = 1491
+		maxAmount = 1491
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1679,16 +1695,408 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-0214_4294295898
+	part = HGAProton15D4_4294479898
 	partName = Part
-	pos = 1.07288361E-06,24.0876122,1.1920929E-07
+	pos = -1.24358821,16.7731533,1.66893017E-06
+	attPos = 0.00389003754,-0.0723495483,0
+	attPos0 = -1.2474798,-0.766241074,1.19209403E-07
+	rot = 0,-0.707106888,0,-0.70710665
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106888,0,0.707106769
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 3
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HGAProton15D4_4294478130
+	sym = HGAProton15D4_4294478084
+	sym = HGAProton15D4_4294478038
+	srfN = srfAttach,HGAProtonLightS2_4294494302
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 0.34999999999999998
+		maxAmount = 0.34999999999999998
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGAProton15D4_4294478130
+	partName = Part
+	pos = 2.11268139E-06,16.7731533,1.24359167
+	attPos = 3.5762821E-07,-0.0723495483,-0.00388979912
+	attPos0 = 2.65184603E-08,-0.766241074,1.24747968
+	rot = 0,-1,0,1.78813892E-07
+	attRot = 0,0,0,1
+	attRot0 = 0,1,0,-1.19209275E-07
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 3
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HGAProton15D4_4294479898
+	sym = HGAProton15D4_4294478084
+	sym = HGAProton15D4_4294478038
+	srfN = srfAttach,HGAProtonLightS2_4294494302
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 0.34999999999999998
+		maxAmount = 0.34999999999999998
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGAProton15D4_4294478084
+	partName = Part
+	pos = 1.24359179,16.7731533,1.19209244E-06
+	attPos = -0.00389003754,-0.0723495483,-1.19209403E-07
+	attPos0 = 1.2474798,-0.766241074,-2.38418806E-07
+	rot = 0,-0.70710665,0,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = 0,0.707106709,0,-0.707106948
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 3
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HGAProton15D4_4294479898
+	sym = HGAProton15D4_4294478130
+	sym = HGAProton15D4_4294478038
+	srfN = srfAttach,HGAProtonLightS2_4294494302
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 0.34999999999999998
+		maxAmount = 0.34999999999999998
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGAProton15D4_4294478038
+	partName = Part
+	pos = 1.51663437E-06,16.7731533,-1.24358809
+	attPos = -1.19209375E-07,-0.0723495483,0.00389027596
+	attPos0 = -9.26908967E-08,-0.766241074,-1.24747968
+	rot = 0,-1.19209261E-07,0,-1
+	attRot = 0,0,0,1
+	attRot0 = 0,-1.19209275E-07,0,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 3
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HGAProton15D4_4294479898
+	sym = HGAProton15D4_4294478130
+	sym = HGAProton15D4_4294478084
+	srfN = srfAttach,HGAProtonLightS2_4294494302
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+			}
+			ActivateAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 0.34999999999999998
+		maxAmount = 0.34999999999999998
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = HGAProtonRD-0214_4294441794
+	partName = Part
+	pos = 1.70201622E-06,16.4662266,1.56999749E-06
 	attPos = 0,0,0
-	attPos0 = -2.65185012E-08,-1.14551544,-6.24172669E-09
+	attPos0 = -2.65184834E-08,-1.14551735,2.0276735E-08
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 7
@@ -1701,7 +2109,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,HGAProtonStage3p2_4294298376
+	attN = top,HGAProtonLightS2_4294494302
 	EVENTS
 	{
 	}
@@ -1809,16 +2217,16 @@ PART
 }
 PART
 {
-	part = HGAProtonStage2_4294290862
+	part = HGAProtonMediumS1_4294465796
 	partName = Part
-	pos = 1.13248825E-06,18.9456711,1.1920929E-07
+	pos = 1.68236409E-06,7.03059387,1.60213312E-06
 	attPos = 0,0,0
-	attPos0 = 2.65184941E-08,-6.28745461,3.55271537E-15
+	attPos0 = -4.61705802E-08,-10.5811501,5.24123784E-08
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
 	istg = 6
@@ -1831,808 +2239,27 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = HGAProtonRD-0210.Thrustplate_4294279202
-	link = HGAProtonStage1_4294217956
-	link = HGAProton8D84_4294184666
-	link = HGAProton8D84_4294169114
-	link = HGAProton8D84_4294169068
-	link = HGAProton8D84_4294169022
-	link = HGAProton8D84_4294168976
-	link = HGAProton8D84_4294168930
-	attN = top,HGAProtonStage3p2_4294298376
-	attN = engine,HGAProtonRD-0210.Thrustplate_4294279202
-	attN = bottom,HGAProtonStage1_4294217956
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = FlagDecal
-		isEnabled = True
-		flagDisplayed = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = LiquidFuel
-		amount = 2369
-		maxAmount = 2369
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-	RESOURCE
-	{
-		name = Oxidizer
-		amount = 2896
-		maxAmount = 2896
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProtonRD-0210.Thrustplate_4294279202
-	partName = Part
-	pos = 1.13248825E-06,14.5131187,1.1920929E-07
-	attPos = 0,0,0
-	attPos0 = 7.10542905E-15,-4.43255424,3.55271622E-15
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 6
-	resPri = 0
-	dstg = 3
-	sidx = -1
-	sqor = -1
-	sepI = 6
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = HGAProtonRD-0210_4294235202
-	link = HGAProtonRD-0210_4294234896
-	link = HGAProtonRD-0210_4294234800
-	link = HGAProtonRD-0210_4294234704
-	attN = top,HGAProtonStage2_4294290862
-	attN = bottom1,HGAProtonRD-0210_4294234800
-	attN = bottom2,HGAProtonRD-0210_4294234704
-	attN = bottom3,HGAProtonRD-0210_4294235202
-	attN = bottom4,HGAProtonRD-0210_4294234896
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-}
-PART
-{
-	part = HGAProtonRD-0210_4294235202
-	partName = Part
-	pos = 1.13248825E-06,14.5131187,-0.716468513
-	attPos = 0,0,0
-	attPos0 = 1.06581427E-14,0,-0.716468155
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 9
-	resPri = 0
-	dstg = 4
-	sidx = 0
-	sqor = 9
-	sepI = 6
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProtonRD-0210_4294234896
-	sym = HGAProtonRD-0210_4294234800
-	sym = HGAProtonRD-0210_4294234704
-	attN = top,HGAProtonRD-0210.Thrustplate_4294279202
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProtonRD-0210_4294234896
-	partName = Part
-	pos = -0.716467559,14.5131187,1.1920929E-07
-	attPos = 0,0,0
-	attPos0 = -0.716468155,0,-7.10543244E-15
-	rot = 0,0.707106829,0,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 9
-	resPri = 0
-	dstg = 4
-	sidx = 0
-	sqor = 9
-	sepI = 6
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProtonRD-0210_4294235202
-	sym = HGAProtonRD-0210_4294234800
-	sym = HGAProtonRD-0210_4294234704
-	attN = top,HGAProtonRD-0210.Thrustplate_4294279202
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProtonRD-0210_4294234800
-	partName = Part
-	pos = 1.13248825E-06,14.5131187,0.716468751
-	attPos = 0,0,0
-	attPos0 = -3.19744299E-14,0,0.716468215
-	rot = 0,1,0,-1.19209275E-07
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,-1.19209275E-07
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 9
-	resPri = 0
-	dstg = 4
-	sidx = 0
-	sqor = 9
-	sepI = 6
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProtonRD-0210_4294235202
-	sym = HGAProtonRD-0210_4294234896
-	sym = HGAProtonRD-0210_4294234704
-	attN = top,HGAProtonRD-0210.Thrustplate_4294279202
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProtonRD-0210_4294234704
-	partName = Part
-	pos = 0.716469765,14.5131187,1.1920929E-07
-	attPos = 0,0,0
-	attPos0 = 0.716468155,0,-7.10543244E-15
-	rot = 0,0.707106829,0,-0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,-0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 9
-	resPri = 0
-	dstg = 4
-	sidx = 0
-	sqor = 9
-	sepI = 6
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProtonRD-0210_4294235202
-	sym = HGAProtonRD-0210_4294234896
-	sym = HGAProtonRD-0210_4294234800
-	attN = top,HGAProtonRD-0210.Thrustplate_4294279202
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = ElectricCharge
-		amount = 0
-		maxAmount = 0
-		flowState = True
-		isTweakable = False
-		hideFlow = True
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProtonStage1_4294217956
-	partName = Part
-	pos = 1.07288361E-06,7.06095314,2.38418693E-07
-	attPos = 0,0,0
-	attPos0 = -5.96046661E-08,-11.8847198,9.89325883E-08
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 8
-	resPri = 0
-	dstg = 4
-	sidx = 0
-	sqor = 8
-	sepI = 8
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = HGAProtonRD-253_4294216598
-	link = HGAProtonRD-253_4294216224
-	link = HGAProtonRD-253_4294216130
-	link = HGAProtonRD-253_4294216036
-	link = HGAProtonRD-253_4294215942
-	link = HGAProtonRD-253_4294215848
-	link = HGAProtonLaunchpad_4294194260
-	attN = top,HGAProtonStage2_4294290862
-	attN = engine00,HGAProtonRD-253_4294216598
-	attN = engine01,HGAProtonRD-253_4294215848
-	attN = engine02,HGAProtonRD-253_4294215942
-	attN = engine03,HGAProtonRD-253_4294216036
-	attN = engine04,HGAProtonRD-253_4294216130
-	attN = engine05,HGAProtonRD-253_4294216224
-	attN = bottom,HGAProtonLaunchpad_4294194260
+	link = HGAProtonRD-253_4294459576
+	link = HGAProtonRD-253_4294459242
+	link = HGAProtonRD-253_4294459148
+	link = HGAProtonRD-253_4294459054
+	link = HGAProtonRD-253_4294458960
+	link = HGAProtonRD-253_4294458866
+	link = HGAProtonLaunchpad_4294453836
+	link = HGAProton8D84_4294446650
+	link = HGAProton8D84_4294445034
+	link = HGAProton8D84_4294444988
+	link = HGAProton8D84_4294444942
+	link = HGAProton8D84_4294444896
+	link = HGAProton8D84_4294444850
+	attN = top,HGAProtonLightS2_4294494302
+	attN = engine00,HGAProtonRD-253_4294459576
+	attN = engine01,HGAProtonRD-253_4294458866
+	attN = engine02,HGAProtonRD-253_4294458960
+	attN = engine03,HGAProtonRD-253_4294459054
+	attN = engine04,HGAProtonRD-253_4294459148
+	attN = engine05,HGAProtonRD-253_4294459242
+	attN = bottom,HGAProtonLaunchpad_4294453836
 	EVENTS
 	{
 	}
@@ -2691,8 +2318,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 6450
-		maxAmount = 6450
+		amount = 6978
+		maxAmount = 6978
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2702,8 +2329,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 7884
-		maxAmount = 7884
+		amount = 8528
+		maxAmount = 8528
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -2713,11 +2340,11 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-253_4294216598
+	part = HGAProtonRD-253_4294459576
 	partName = Part
-	pos = -1.31098413,1.33619499,-2.3841892E-07
+	pos = -1.3109827,1.30583572,1.19209244E-06
 	attPos = 0,0,0
-	attPos0 = -1.31098437,-5.72475815,-4.56560713E-07
+	attPos0 = -1.31098449,-5.72475815,-4.10040684E-07
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -2725,22 +2352,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 9
 	resPri = 0
-	dstg = 6
+	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 8
+	sqor = 9
+	sepI = 6
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProtonRD-253_4294216224
-	sym = HGAProtonRD-253_4294216130
-	sym = HGAProtonRD-253_4294216036
-	sym = HGAProtonRD-253_4294215942
-	sym = HGAProtonRD-253_4294215848
-	attN = top,HGAProtonStage1_4294217956
+	sym = HGAProtonRD-253_4294459242
+	sym = HGAProtonRD-253_4294459148
+	sym = HGAProtonRD-253_4294459054
+	sym = HGAProtonRD-253_4294458960
+	sym = HGAProtonRD-253_4294458866
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -2879,11 +2506,11 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-253_4294216224
+	part = HGAProtonRD-253_4294459242
 	partName = Part
-	pos = -0.655491889,1.33619499,1.13534677
+	pos = -0.655490994,1.30583572,1.13534689
 	attPos = 0,0,0
-	attPos0 = -0.655492604,-5.72475815,1.13534546
+	attPos0 = -0.655492663,-5.72475815,1.13534534
 	rot = 0,0.5,0,0.866025388
 	attRot = 0,0,0,1
 	attRot0 = 0,0.5,0,0.866025388
@@ -2891,22 +2518,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 9
 	resPri = 0
-	dstg = 6
+	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 8
+	sqor = 9
+	sepI = 6
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProtonRD-253_4294216598
-	sym = HGAProtonRD-253_4294216130
-	sym = HGAProtonRD-253_4294216036
-	sym = HGAProtonRD-253_4294215942
-	sym = HGAProtonRD-253_4294215848
-	attN = top,HGAProtonStage1_4294217956
+	sym = HGAProtonRD-253_4294459576
+	sym = HGAProtonRD-253_4294459148
+	sym = HGAProtonRD-253_4294459054
+	sym = HGAProtonRD-253_4294458960
+	sym = HGAProtonRD-253_4294458866
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3045,11 +2672,11 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-253_4294216130
+	part = HGAProtonRD-253_4294459148
 	partName = Part
-	pos = 0.655493081,1.33619499,1.13534772
+	pos = 0.655493379,1.30583572,1.13534808
 	attPos = 0,0,0
-	attPos0 = 0.65549165,-5.72475815,1.13534665
+	attPos0 = 0.65549171,-5.72475815,1.13534653
 	rot = 0,0.866025448,0,0.49999994
 	attRot = 0,0,0,1
 	attRot0 = 0,0.866025448,0,0.49999994
@@ -3057,22 +2684,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 9
 	resPri = 0
-	dstg = 6
+	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 8
+	sqor = 9
+	sepI = 6
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProtonRD-253_4294216598
-	sym = HGAProtonRD-253_4294216224
-	sym = HGAProtonRD-253_4294216036
-	sym = HGAProtonRD-253_4294215942
-	sym = HGAProtonRD-253_4294215848
-	attN = top,HGAProtonStage1_4294217956
+	sym = HGAProtonRD-253_4294459576
+	sym = HGAProtonRD-253_4294459242
+	sym = HGAProtonRD-253_4294459054
+	sym = HGAProtonRD-253_4294458960
+	sym = HGAProtonRD-253_4294458866
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3211,11 +2838,11 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-253_4294216036
+	part = HGAProtonRD-253_4294459054
 	partName = Part
-	pos = 1.31098604,1.33619499,8.34465709E-07
+	pos = 1.31098628,1.30583572,2.26497741E-06
 	attPos = 0,0,0
-	attPos0 = 1.31098437,-5.72475815,6.16323632E-07
+	attPos0 = 1.31098449,-5.72475815,6.62844229E-07
 	rot = 0,1,0,-1.19209275E-07
 	attRot = 0,0,0,1
 	attRot0 = 0,1,0,-1.19209275E-07
@@ -3223,22 +2850,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 9
 	resPri = 0
-	dstg = 6
+	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 8
+	sqor = 9
+	sepI = 6
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProtonRD-253_4294216598
-	sym = HGAProtonRD-253_4294216224
-	sym = HGAProtonRD-253_4294216130
-	sym = HGAProtonRD-253_4294215942
-	sym = HGAProtonRD-253_4294215848
-	attN = top,HGAProtonStage1_4294217956
+	sym = HGAProtonRD-253_4294459576
+	sym = HGAProtonRD-253_4294459242
+	sym = HGAProtonRD-253_4294459148
+	sym = HGAProtonRD-253_4294458960
+	sym = HGAProtonRD-253_4294458866
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3377,11 +3004,11 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-253_4294215942
+	part = HGAProtonRD-253_4294458960
 	partName = Part
-	pos = 0.655494273,1.33619499,-1.13534641
+	pos = 0.655494452,1.30583572,-1.13534403
 	attPos = 0,0,0
-	attPos0 = 0.655492723,-5.72475815,-1.13534546
+	attPos0 = 0.655492783,-5.72475815,-1.13534558
 	rot = 0,0.866025388,0,-0.5
 	attRot = 0,0,0,1
 	attRot0 = 0,0.866025388,0,-0.5
@@ -3389,22 +3016,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 9
 	resPri = 0
-	dstg = 6
+	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 8
+	sqor = 9
+	sepI = 6
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProtonRD-253_4294216598
-	sym = HGAProtonRD-253_4294216224
-	sym = HGAProtonRD-253_4294216130
-	sym = HGAProtonRD-253_4294216036
-	sym = HGAProtonRD-253_4294215848
-	attN = top,HGAProtonStage1_4294217956
+	sym = HGAProtonRD-253_4294459576
+	sym = HGAProtonRD-253_4294459242
+	sym = HGAProtonRD-253_4294459148
+	sym = HGAProtonRD-253_4294459054
+	sym = HGAProtonRD-253_4294458866
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3543,11 +3170,11 @@ PART
 }
 PART
 {
-	part = HGAProtonRD-253_4294215848
+	part = HGAProtonRD-253_4294458866
 	partName = Part
-	pos = -0.655491173,1.33619499,-1.13534701
+	pos = -0.65549022,1.30583572,-1.13534498
 	attPos = 0,0,0
-	attPos0 = -0.655491889,-5.72475815,-1.13534641
+	attPos0 = -0.655491889,-5.72475815,-1.13534653
 	rot = 0,0.5,0,-0.866025388
 	attRot = 0,0,0,1
 	attRot0 = 0,0.5,0,-0.866025388
@@ -3555,22 +3182,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 11
+	istg = 9
 	resPri = 0
-	dstg = 6
+	dstg = 4
 	sidx = 0
-	sqor = 11
-	sepI = 8
+	sqor = 9
+	sepI = 6
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProtonRD-253_4294216598
-	sym = HGAProtonRD-253_4294216224
-	sym = HGAProtonRD-253_4294216130
-	sym = HGAProtonRD-253_4294216036
-	sym = HGAProtonRD-253_4294215942
-	attN = top,HGAProtonStage1_4294217956
+	sym = HGAProtonRD-253_4294459576
+	sym = HGAProtonRD-253_4294459242
+	sym = HGAProtonRD-253_4294459148
+	sym = HGAProtonRD-253_4294459054
+	sym = HGAProtonRD-253_4294458960
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3709,29 +3336,29 @@ PART
 }
 PART
 {
-	part = HGAProtonLaunchpad_4294194260
+	part = HGAProtonLaunchpad_4294453836
 	partName = Part
-	pos = 1.13248825E-06,0.87694931,1.1920929E-07
+	pos = 1.7368809E-06,0.846590042,1.54761619E-06
 	attPos = 0,0,0
-	attPos0 = 5.96046661E-08,-6.18400383,-1.19209361E-07
+	attPos0 = 5.45167964E-08,-6.18400383,-5.45169634E-08
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 10
+	istg = 8
 	resPri = 0
-	dstg = 14
+	dstg = 12
 	sidx = 0
-	sqor = 10
-	sepI = 10
+	sqor = 8
+	sepI = 8
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,HGAProtonStage1_4294217956
+	attN = top,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3849,14 +3476,14 @@ PART
 }
 PART
 {
-	part = HGAProton8D84_4294184666
+	part = HGAProton8D84_4294446650
 	partName = Part
-	pos = -1.25687122,22.4754219,-1.13686838E-13
-	attPos = -0.0129956007,1.90734863E-06,-2.3841875E-07
-	attPos0 = -1.24387658,3.52974892,1.19209375E-07
-	rot = 0,-0.707106709,0,-0.707106829
+	pos = 0.627964377,15.2606716,-1.0876621
+	attPos = 1.87414348,-0.0178432465,-1.08766377
+	attPos0 = -1.24618077,8.24792099,6.67970426E-08
+	rot = 0,0.258818865,0,-0.965925872
 	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,0.707106829
+	attRot0 = 0,0.707106888,0,0.707106769
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3871,12 +3498,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProton8D84_4294169114
-	sym = HGAProton8D84_4294169068
-	sym = HGAProton8D84_4294169022
-	sym = HGAProton8D84_4294168976
-	sym = HGAProton8D84_4294168930
-	srfN = srfAttach,HGAProtonStage2_4294290862
+	sym = HGAProton8D84_4294445034
+	sym = HGAProton8D84_4294444988
+	sym = HGAProton8D84_4294444942
+	sym = HGAProton8D84_4294444896
+	sym = HGAProton8D84_4294444850
+	srfN = srfAttach,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -3949,14 +3576,14 @@ PART
 }
 PART
 {
-	part = HGAProton8D84_4294169114
+	part = HGAProton8D84_4294445034
 	partName = Part
-	pos = -0.628435016,22.4754219,1.08848345
-	attPos = -0.00649791956,1.90734863E-06,0.0112543106
-	attPos0 = -0.621938109,3.52974892,1.07722878
-	rot = 0,-0.965925872,0,-0.258819044
+	pos = -0.627961516,15.2606716,-1.08766198
+	attPos = -0.00487279892,-0.0178432465,-2.166888
+	attPos0 = -0.623090386,8.24792099,1.07922447
+	rot = 0,-0.258819252,0,-0.965925813
 	attRot = 0,0,0,1
-	attRot0 = 0,0.965925813,0,0.258819073
+	attRot0 = 0,0.965925813,0,0.258818954
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -3971,12 +3598,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProton8D84_4294184666
-	sym = HGAProton8D84_4294169068
-	sym = HGAProton8D84_4294169022
-	sym = HGAProton8D84_4294168976
-	sym = HGAProton8D84_4294168930
-	srfN = srfAttach,HGAProtonStage2_4294290862
+	sym = HGAProton8D84_4294446650
+	sym = HGAProton8D84_4294444988
+	sym = HGAProton8D84_4294444942
+	sym = HGAProton8D84_4294444896
+	sym = HGAProton8D84_4294444850
+	srfN = srfAttach,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -4049,14 +3676,14 @@ PART
 }
 PART
 {
-	part = HGAProton8D84_4294169068
+	part = HGAProton8D84_4294444988
 	partName = Part
-	pos = 0.6284374,22.4754219,1.08848345
-	attPos = 0.00649762154,1.90734863E-06,0.011254549
-	attPos0 = 0.621938527,3.52974892,1.07722855
-	rot = 0,-0.965925872,0,0.258819044
+	pos = -1.25592399,15.2606716,1.90734909E-06
+	attPos = -1.8790164,-0.0178432465,-1.07922411
+	attPos0 = 0.623090625,8.24792099,1.07922447
+	rot = 0,-0.707106948,0,-0.70710659
 	attRot = 0,0,0,1
-	attRot0 = 0,0.965925872,0,-0.258819133
+	attRot0 = 0,0.965925813,0,-0.258819163
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4071,12 +3698,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProton8D84_4294184666
-	sym = HGAProton8D84_4294169114
-	sym = HGAProton8D84_4294169022
-	sym = HGAProton8D84_4294168976
-	sym = HGAProton8D84_4294168930
-	srfN = srfAttach,HGAProtonStage2_4294290862
+	sym = HGAProton8D84_4294446650
+	sym = HGAProton8D84_4294445034
+	sym = HGAProton8D84_4294444942
+	sym = HGAProton8D84_4294444896
+	sym = HGAProton8D84_4294444850
+	srfN = srfAttach,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -4149,14 +3776,14 @@ PART
 }
 PART
 {
-	part = HGAProton8D84_4294169022
+	part = HGAProton8D84_4294444942
 	partName = Part
-	pos = 1.25687361,22.4754219,1.1920929E-07
-	attPos = 0.0129957199,1.90734863E-06,2.3841875E-07
-	attPos0 = 1.24387658,3.52974892,-2.3841875E-07
-	rot = 0,-0.707106709,0,0.707106829
+	pos = 1.25592685,15.2606716,1.43051136E-06
+	attPos = 0.00974440575,-0.0178432465,0
+	attPos0 = 1.24618077,8.24792099,-1.71621821E-07
+	rot = 0,0.707106709,0,-0.707106948
 	attRot = 0,0,0,1
-	attRot0 = 0,0.707106769,0,-0.707106888
+	attRot0 = 0,0.707106709,0,-0.707106948
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4171,12 +3798,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProton8D84_4294184666
-	sym = HGAProton8D84_4294169114
-	sym = HGAProton8D84_4294169068
-	sym = HGAProton8D84_4294168976
-	sym = HGAProton8D84_4294168930
-	srfN = srfAttach,HGAProtonStage2_4294290862
+	sym = HGAProton8D84_4294446650
+	sym = HGAProton8D84_4294445034
+	sym = HGAProton8D84_4294444988
+	sym = HGAProton8D84_4294444896
+	sym = HGAProton8D84_4294444850
+	srfN = srfAttach,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -4249,14 +3876,14 @@ PART
 }
 PART
 {
-	part = HGAProton8D84_4294168976
+	part = HGAProton8D84_4294444896
 	partName = Part
-	pos = 0.628437519,22.4754219,-1.08848298
-	attPos = 0.00649815798,1.90734863E-06,-0.0112540722
-	attPos0 = 0.621938109,3.52974892,-1.07722878
-	rot = 0,-0.258819222,0,0.965925813
+	pos = -0.62796104,15.2606716,1.08766556
+	attPos = -1.25105309,-0.0178432465,2.16688824
+	attPos0 = 0.623090386,8.24792099,-1.07922423
+	rot = 0,-0.965925932,0,-0.258818895
 	attRot = 0,0,0,1
-	attRot0 = 0,0.258818984,0,-0.965925813
+	attRot0 = 0,0.258818895,0,-0.965925872
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4271,12 +3898,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProton8D84_4294184666
-	sym = HGAProton8D84_4294169114
-	sym = HGAProton8D84_4294169068
-	sym = HGAProton8D84_4294169022
-	sym = HGAProton8D84_4294168930
-	srfN = srfAttach,HGAProtonStage2_4294290862
+	sym = HGAProton8D84_4294446650
+	sym = HGAProton8D84_4294445034
+	sym = HGAProton8D84_4294444988
+	sym = HGAProton8D84_4294444942
+	sym = HGAProton8D84_4294444850
+	srfN = srfAttach,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -4349,14 +3976,14 @@ PART
 }
 PART
 {
-	part = HGAProton8D84_4294168930
+	part = HGAProton8D84_4294444850
 	partName = Part
-	pos = -0.628434658,22.4754219,-1.08848274
-	attPos = -0.00649744272,1.90734863E-06,-0.0112538338
-	attPos0 = -0.621938229,3.52974892,-1.07722878
-	rot = 0,-0.258819014,0,-0.965925872
+	pos = 0.627964556,15.2606716,1.08766556
+	attPos = 1.25105321,-0.0178432465,2.16688824
+	attPos0 = -0.623090327,8.24792099,-1.07922423
+	rot = 0,-0.965925813,0,0.258819222
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.258818984,0,-0.965925813
+	attRot0 = 0,-0.258819073,0,-0.965925813
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -4371,12 +3998,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HGAProton8D84_4294184666
-	sym = HGAProton8D84_4294169114
-	sym = HGAProton8D84_4294169068
-	sym = HGAProton8D84_4294169022
-	sym = HGAProton8D84_4294168976
-	srfN = srfAttach,HGAProtonStage2_4294290862
+	sym = HGAProton8D84_4294446650
+	sym = HGAProton8D84_4294445034
+	sym = HGAProton8D84_4294444988
+	sym = HGAProton8D84_4294444942
+	sym = HGAProton8D84_4294444896
+	srfN = srfAttach,HGAProtonMediumS1_4294465796
 	EVENTS
 	{
 	}
@@ -4440,398 +4067,6 @@ PART
 		name = SolidFuel
 		amount = 1.1000000000000001
 		maxAmount = 1.1000000000000001
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProton15D4_4294173388
-	partName = Part
-	pos = -1.24848676,24.3945732,2.38418693E-07
-	attPos = -0.0132482052,-0.0392913818,0
-	attPos0 = -1.23523915,-0.799263,1.19209346E-07
-	rot = 0,-0.707106829,0,-0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 3
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProton15D4_4294170794
-	sym = HGAProton15D4_4294170748
-	sym = HGAProton15D4_4294170702
-	srfN = srfAttach,HGAProtonStage3p2_4294298376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 0.34999999999999998
-		maxAmount = 0.34999999999999998
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProton15D4_4294170794
-	partName = Part
-	pos = 1.49011635E-06,24.3945732,1.24848831
-	attPos = 2.11900144E-07,-0.0392913818,0.0132484436
-	attPos0 = 1.45727753E-07,-0.799263,1.23523915
-	rot = 0,-1,0,1.19209261E-07
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 3
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProton15D4_4294173388
-	sym = HGAProton15D4_4294170748
-	sym = HGAProton15D4_4294170702
-	srfN = srfAttach,HGAProtonStage3p2_4294298376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 0.34999999999999998
-		maxAmount = 0.34999999999999998
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProton15D4_4294170748
-	partName = Part
-	pos = 1.24848914,24.3945732,-2.3841892E-07
-	attPos = 0.0132482052,-0.0392913818,-1.19209346E-07
-	attPos0 = 1.23523915,-0.799263,-2.38418693E-07
-	rot = 0,-0.707106829,0,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106769,0,-0.707106888
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 3
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProton15D4_4294173388
-	sym = HGAProton15D4_4294170794
-	sym = HGAProton15D4_4294170702
-	srfN = srfAttach,HGAProtonStage3p2_4294298376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 0.34999999999999998
-		maxAmount = 0.34999999999999998
-		flowState = True
-		isTweakable = True
-		hideFlow = False
-		isVisible = True
-		flowMode = Both
-	}
-}
-PART
-{
-	part = HGAProton15D4_4294170702
-	partName = Part
-	pos = 8.94069558E-07,24.3945732,-1.24848735
-	attPos = -2.65184923E-08,-0.0392913818,-0.0132478476
-	attPos0 = -2.11900087E-07,-0.799263,-1.23523903
-	rot = 0,0,0,-1
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 3
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HGAProton15D4_4294173388
-	sym = HGAProton15D4_4294170794
-	sym = HGAProton15D4_4294170748
-	srfN = srfAttach,HGAProtonStage3p2_4294298376
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	RESOURCE
-	{
-		name = SolidFuel
-		amount = 0.34999999999999998
-		maxAmount = 0.34999999999999998
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -4843,9 +4078,9 @@ PART
 {
 	part = HGAProtonFairingAupper_4294160160
 	partName = Part
-	pos = -2.52814516E-06,29.2021408,-2.14576949E-06
+	pos = -1.9055783E-06,22.3390808,-1.19210881E-07
 	attPos = 0,0,0
-	attPos0 = -2.26497218E-06,2.36583328,3.66062341E-06
+	attPos0 = -1.64865082E-06,2.36583328,3.66062318E-06
 	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,0.707106829
