@@ -10,7 +10,6 @@
 		"homepage": "http://forum.kerbalspaceprogram.com/index.php?/topic/120548-105-proton-m-breeze-m/",
 		"repository": "https://github.com/InsaneDruid/Proton-M"
 	},
-	//"$kref": "#/ckan/github/InsaneDruid/Proton-M",
 	"$kref": "#/ckan/spacedock/177",
 	"x_netkan_epoch": 1,
 	"depends": [
